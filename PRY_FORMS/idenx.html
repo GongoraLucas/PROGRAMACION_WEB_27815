@@ -1,33 +1,66 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>
-    FORMULARIO
-  </title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO</title>
+  </head>
+  <body>
+    <header>
+      <h1>INGRESAR DATOS DEL ESTUDIANTE</h1>
+    </header>
+    <main>
+      <form action="serve.html" method="get">
+        <label for="nombres">INGRESE SUS NOMBRES</label>
+        <input
+          type="text"
+          name="nombres"
+          id="nombres"
+          placeholder="Lucas Nicolas"
+          autofocus
+          maxlength="7"
+          minlength="2"
+          required
+        />
+        <label for="apellidos">INGRESE SUS APELLIDOS</label>
+        <input
+          type="text"
+          name="apellidos"
+          id="apellidos"
+          placeholder="Gongora Llumiquinga"
+        />
 
-  <header>
-    <h1>INGRESAR DATOS DEL ESTUDIANTE</h1>
-  </header>
-  <main>
+        <label for="email">Ingrese su email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          placeholder="INGRESE EMAIL"
+          required="required"
+        />
 
-    <form action="serve.html" method="get">
-      <label for="nombres">INGRESE SUS NOMBRES</label>
-      <input
-      type="text"
-      name="nombres"
-      id="nombres"
-      placeholder="INGRESE SUS NOMBRES COMPLETOS"
-      >
-    </form>
+        <label for="edad">INGRESE EDAD</label>
 
-  </main>
-  <footer>
+        <input
+          type="number"
+          name="edad"
+          id="edad"
+          placeholder="20"
+          max="50"
+          value="15"
+        />
 
-  </footer>
-
-</body>
+        <label for="fecha_nacimiento">INGRESE SU FECHA DE NACIMIENTOS</label>
+        <input
+        type="date"
+        name="fecha_nacimiento"
+        id="fecha_nacimiento"
+        value="2025-10-22"
+        min="2025-10-10"
+        max="2025-10-30"
+        />
+      </form>
+    </main>
+    <footer></footer>
+  </body>
 </html>
