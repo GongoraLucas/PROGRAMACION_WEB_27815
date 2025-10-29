@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SELECT EN FORMULARIO</title>
+  </head>
+  <body>
+    <header>
+      <h1>SELECT EN FORMULARIO</h1>
+    </header>
+    <main>
+      <form action="server.html" method="get">
+        <label for="id">INGRESE SU ID LID453</label>
+        <input type="text" name="id" id="id" placeholder="INGRESE SU ID" pattern="[A-Z]{3}[0-9]{4}" required>
+        <br>
+        <!-- SELECT EN FORM -->
+        <label for="lista_de_frutas">LISTA DE FRUTAS</label>
+
+
+        <input type="hidden" value="1724340" name="cedula_usuario">
+
+        <select name="lista_de_frutas" id="lista_de_frutas" required autofocus>
+          <!-- Recomendable primera opcion en vacio -->
+          <option value=""></option>
+          <option value="naranja">NARANJA</option>
+          <option value="uva" selected>UVA</option>
+          <option value="zapatos" disabled>ZAPATOS</option>
+          <option value="pera">PERA</option>
+        </select>
+        <br />
+        <label for="musicas_favoritas">SELECCIONA SUS MUSICAS FACVORITAS</label>
+        <br>
+        <select name="musicas_favoritas[]" id="musicas_favoritas" required autofocus multiple size="10" >
+          <!-- Recomendable primera opcion en vacio -->
+          <option value="" disabled></option>
+          <optgroup title="Shakira" label="Shakira">
+              <option value="LOBA_SHAKIRA" selected>LOBA</option>
+              <option value="ANOCHE" disabled >WAKA WAKA</option>
+              <option value="AVENTURA" >LLEVAME EN TU BICICLETA</option>
+          </optgroup>
+          <optgroup title="bad bunny" label="bad bunny">
+              <option value="LOBA_SHAKIRA" selected>PERRO NEGRO</option>
+              <option value="ANOCHE" disabled >ANOCHE</option>
+              <option value="AVENTURA" ></option>
+          </optgroup>
+          <optgroup title="Aventura" label="Aventura">
+              <option value="LOBA_SHAKIRA" selected>LOBA SHAKIRA</option>
+              <option value="ANOCHE" disabled >ANOCHE</option>
+              <option value="AVENTURA" >INFIELES AVENTURA</option>
+          </optgroup>
+        </select>
+        <br>
+        <br>
+        <!-- TextArea -->
+         <label for="descripcion">Descripcion:</label>
+         <textarea name="descripcion" id="descripcion" autofocus required rows="1" cols="100" >HOLA INGE</textarea>
+
+        <br>
+        <button type="submit">ENVIAR AL SERVIDOR</button>
+      </form>
+    </main>
+    <footer>
+      <p>c 2025</p>
+    </footer>
+  </body>
+</html>

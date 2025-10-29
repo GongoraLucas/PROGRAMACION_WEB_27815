@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FORMULARIO</title>
+  </head>
+  <body>
+    <header>
+      <h1>INGRESAR DATOS DEL ESTUDIANTE</h1>
+    </header>
+    <main>
+      <form action="./serve.html" method="post">
+        <label for="nombres">INGRESE SUS NOMBRES</label>
+        <input
+          type="text"
+          name="nombres"
+          id="nombres"
+          placeholder="Lucas Nicolas"
+          autofocus
+          maxlength="7"
+          minlength="2"
+          required
+        />
+        <br>
+        <br>
+        <label for="apellidos">INGRESE SUS APELLIDOS</label>
+        <input
+        type="text"
+        name="apellidos"
+        id="apellidos"
+        placeholder="Gongora Llumiquinga"
+        />
+        <br>
+        <br>
+        
+        <label for="email">Ingrese su email</label>
+        <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="INGRESE EMAIL"
+        required="required"
+        />
+        
+        <br>
+        <br>
+
+        <label for="edad">INGRESE EDAD</label>
+        
+        <input
+        type="number"
+        name="edad"
+        id="edad"
+        placeholder="20"
+        max="50"
+        value="15"
+        />
+
+        <br>
+        <br>
+
+        <label for="password">CONTRASEÑA</label>
+        <input type="password" name="password" id="password">
+        
+        <br>
+        <br>
+        <label for="fecha_nacimiento">INGRESE SU FECHA DE NACIMIENTOS</label>
+        <input
+        type="date"
+        name="fecha_nacimiento"
+        id="fecha_nacimiento"
+        value="2025-10-22"
+        min="2025-10-10"
+        max="2025-10-30"
+        />
+        
+        <br>
+        <br>
+        <label for="">Seleccione su sexo</label>
+        <br>
+        <label for="hombre">HOMBRE</label>
+        <input type="radio" name="sexo" id="hombre" checked>
+        <label for="mujer">MUJER</label>
+        <input type="radio" name="sexo" id="mujer">
+
+        <br>
+        <br>
+
+        <label for="">Selecciona un dia</label>
+
+        <br>
+    
+        <label for="lunes">LUNES</label>
+        <input type="checkbox" name="dia[]" id="lunes" value="lunes" checked>
+        <label for="martes">MARTES</label>
+        <input type="checkbox" name="dia[]" id="martes" value="martes" disabled>
+        <label for="miercoles">MIERCOLES</label>
+        <input type="checkbox" name="dia[]" id="miercoles" value="miercoles" checked>
+        <label for="jueves">JUEVES</label>
+        <input type="checkbox" name="dia[]" id="jueves" value="jueves" disabled>
+        <label for="viernes">VIERNES</label>
+        <input type="checkbox" name="dia[]" id="viernes" value="viernes" checked>
+
+        <br>
+        <br>
+
+        <label for="foto">Cargue una foto</label>
+        <input 
+        type="file" 
+        id="foto" 
+        name="foto"
+        accept=".png .jpg"
+        >
+
+        <br>
+        <br>
+
+        <label for="color">COLOR FAVORITO</label>
+        <input 
+        type="color"
+        id="color"
+        name="color"
+        >
+
+        <br>
+        <br>
+
+        <label for="estatura">ESTATURA</label>
+        <input 
+        type="range" 
+        name="estatura" 
+        id="estatura" 
+        value="0" 
+        max="50" 
+        >
+        <br>
+        <br>
+        <label for="cedula">CEDULA</label>
+        <input type="search" name="cedula" id="cedula">
+        <br>
+        <br>
+        <input type="reset" name="limpiar" id="limpiar" value="LIMPIAR">
+
+        <br>
+        <br>
+        <input type="submit" name="enviar" id="enviar" value="ENVIAR  FORMULARIO">
+ 
+      </form>
+    </main>
+    <footer></footer>
+  </body>
+</html>

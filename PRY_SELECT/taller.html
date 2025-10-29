@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title> </title>
+  </head>
+  <body>
+    <!-- CABECERA -->
+    <header>
+      <h1>PEDIDO COMPRA</h1>
+    </header>
+    <!-- CUERPO -->
+    <body>
+      <form action="server.html" method="get">
+        <h2>INFORMACION BASICA</h2>
+
+        <label for="cedula">Cédula:</label>
+        <input
+          type="text"
+          name="cedula"
+          id="cedula"
+          minlength="10"
+          maxlength="10"
+          pattern="[0-9]{10}"
+          placeholder="1724340474"
+          required
+        />
+
+        <label for="idFactura">ID Factura/Venta: </label>
+        <input
+          type="text"
+          name="idFactura"
+          id="idFactura"
+          placeholder="FACTUR-2025-10-27-pm"
+          required
+          pattern="[A-Z]{6}-[0-9]{4}-[0-9]{2}-[0-9]{2}-[a-z]{2}"
+        />
+        <br />
+
+        <h2>PRODUCTOS</h2>
+        <label for="productos">PRODUCTOS A ESCOGER</label>
+        <br />
+        <br />
+        <select
+          name="productos[]"
+          id="productos"
+          multiple
+          required
+          size="5"
+          autofocus
+        >
+          <option value="Naranja" selected>Naranja</option>
+          <option value="Tomate" selected>Tomate</option>
+          <option value="Aguacate" selected>Aguacate</option>
+          <option value="Chocolate" selected>Chocolate</option>
+          <option value="Vainilla" selected>Vainilla</option>
+          <option value="Galak" disabled>Galak</option>
+          <option value="Cerveza" disabled>Cerveza</option>
+          <option value="Naranja" disabled>Naranja</option>
+        </select>
+
+        <br />
+        <br />
+        <label for="pdfile">Ingresa el comprobante</label>
+        <input name="pdfile" id="pdfile" type="file" accept=".pdf" required />
+        <br />
+        <br />
+
+        <button type="submit">ENVIAR AL SERVIDOR</button>
+      </form>
+    </body>
+    <!-- PIE DE PAGINA -->
+    <footer>
+      <br />
+
+      C LUCAS GONGORA 2025
+    </footer>
+  </body>
+</html>
