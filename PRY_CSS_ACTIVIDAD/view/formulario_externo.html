@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario - CSS Externo</title>
+  <link rel="stylesheet" href="../public/css/externo.css" />
+</head>
+<body>
+  <form  method="get" >
+    <h2>Formulario (CSS Externo)</h2>
+
+    <label for="nombre_ext">Nombre:</label><br>
+    <input type="text" id="nombre_ext" name="nombre_ext" placeholder="Ingresa tu nombre" />
+    <br><br>
+
+    <label for="comentario_ext">Comentario:</label><br>
+    <textarea id="comentario_ext" name="comentario_ext" placeholder="Escribe tu comentario"></textarea>
+    <br><br>
+
+    <label for="opcion_ext">Selecciona una opción:</label><br>
+    <select id="opcion_ext" name="opcion_ext">
+      <option value="1">Opción 1</option>
+      <option value="2">Opción 2</option>
+      <option value="3">Opción 3</option>
+    </select>
+    <br><br>
+
+    <label for="terminos_ext">
+      <input type="checkbox" id="terminos_ext" name="terminos_ext" checked />
+      Acepto los términos
+    </label>
+    <br><br>
+
+    <label>Género:</label><br>
+    <input type="radio" id="gen_m_ext" name="genero_ext" value="masculino" />
+    <label for="gen_m_ext" style="font-weight:500; margin-right:8px;">Masculino</label>
+
+    <input type="radio" id="gen_f_ext" name="genero_ext" value="femenino" />
+    <label for="gen_f_ext" style="font-weight:500;">Femenino</label>
+    <br><br>
+
+    <button type="submit">Enviar</button>
+  </form>
+</body>
+</html>

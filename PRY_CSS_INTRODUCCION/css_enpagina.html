@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS PAGINA</title>
+    <style>
+      /* Selector universal */
+      * {
+        margin: 0px;
+        padding: 0px;
+      }
+      /* Selector por elementos */
+      h1 {
+        color: blueviolet;
+        font-size: 15px;
+        text-align: center;
+      }
+      p {
+        color: yellow;
+      }
+      /* elemento etiqueta htmls */
+      button{
+        background-color: blue;
+      }
+      /*propiedad class de nuestras etiquetas */
+      .boton-personalizado{
+        background-color: green;
+        width: 100%;
+        border: none;
+        color: red;
+        font-weight: bold;
+        text-align: left;
+        padding: 5px;
+        margin: 2px;
+      }
+      .texto-derecho{
+        text-align: right;
+      }
+      .text-center{
+        text-align: center;
+      }
+      #boton-unico{
+        background-color: rgb(35, 145, 172,0.2);
+      }
+    </style>
+  </head>
+  <body>
+    <h1>HOLA MUNDO</h1>
+    <h1>2025</h1>
+    <p>WELCOME TO PRORGRAMACION WEB</p>
+    <p>PARRAFO DOS</p>
+    <!-- p{safsafsaf}*100 -->
+    <hr />
+
+    <button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button
+    ><button>BOTON SIN CLASE</button><button>BOTON SIN CLASE</button
+    ><button>BOTON SIN CLASE</button>
+    <br />
+    <hr />
+    <br />
+    <button class="boton-personalizado texto-derecho">BOTON CON CLASE</button
+    ><button class="boton-personalizado">BOTON CON CLASE</button
+    ><button class="boton-personalizado">BOTON CON CLASE</button
+    ><button class="boton-personalizado">BOTON CON CLASE</button
+    ><button class="boton-personalizado text-center">BOTON CON CLASE</button>
+
+    <hr>
+
+    <button id="boton-unico">ADIOS</button>
+  </body>
+</html>

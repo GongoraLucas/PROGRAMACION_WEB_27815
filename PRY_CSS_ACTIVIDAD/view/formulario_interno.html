@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Formulario - CSS Interno y Estilos en Línea</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f7fa;
+      margin: 30px;
+    }
+
+    form {
+      background-color: #ffffff;
+      border: 1px solid #cccccc;
+      border-radius: 8px;
+      padding: 18px;
+      width: 420px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.04);
+    }
+
+    h2 {
+      margin: 0 0 12px 0;
+      font-size: 20px;
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: inline-block;
+      margin-bottom: 6px;
+      font-weight: 600;
+      font-size: 14px;
+      color: #222;
+    }
+
+    button {
+      display: block;
+      margin-top: 12px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <form method="get" >
+    <h2>Formulario (CSS Interno + Estilos en Línea)</h2>
+
+    <label for="nombre">Nombre:</label><br>
+    <input
+      type="text"
+      id="nombre"
+      name="nombre"
+      placeholder="Ingresa tu nombre"
+      style="width:100%; padding:8px; border:1px solid #888; border-radius:6px; font-size:14px;"
+    />
+    <br><br>
+
+    <label for="comentario">Comentario:</label><br>
+    <textarea
+      id="comentario"
+      name="comentario"
+      placeholder="Escribe tu comentario"
+      style="width:100%; height:90px; padding:8px; border:1px solid #888; border-radius:6px; font-size:13px;"
+    ></textarea>
+    <br><br>
+
+    <label for="opcion">Selecciona una opción:</label><br>
+    <select id="opcion" name="opcion" style="width:100%; padding:7px; border:1px solid #888; border-radius:6px; background-color:#f7f7f7;">
+      <option value="1">Opción 1</option>
+      <option value="2">Opción 2</option>
+      <option value="3">Opción 3</option>
+    </select>
+    <br><br>
+
+    <label for="terminos">
+      <input
+        type="checkbox"
+        id="terminos"
+        name="terminos"
+        checked
+        style="width:18px; height:18px; vertical-align:middle; accent-color:#007BFF; margin-right:6px;"
+      />
+      Acepto los términos
+    </label>
+    <br><br>
+
+    <label>Género:</label><br>
+    <input
+      type="radio"
+      id="gen_m"
+      name="genero"
+      value="masculino"
+      style="width:16px; height:16px; vertical-align:middle; accent-color:#007BFF; margin-right:6px;"
+    />
+    <label for="gen_m" style="font-weight:500; margin-right:10px;">Masculino</label>
+
+    <input
+      type="radio"
+      id="gen_f"
+      name="genero"
+      value="femenino"
+      style="width:16px; height:16px; vertical-align:middle; accent-color:#ff4081; margin-right:6px;"
+    />
+    <label for="gen_f" style="font-weight:500;">Femenino</label>
+    <br><br>
+
+    <button
+      type="submit"
+      style="width:100%; padding:10px 12px; background-color:#007BFF; color:#fff; border:none; border-radius:6px; font-size:15px;"
+    >
+      Enviar
+    </button>
+  </form>
+</body>
+</html>
